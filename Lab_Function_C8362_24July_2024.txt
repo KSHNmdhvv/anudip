@@ -1,0 +1,45 @@
+def greet():
+    print("Hello, welcome!")
+
+greet()
+
+def greet_person(name):
+    print(f"Hello, {name}!")
+
+greet_person("Alice")
+
+def greet_person(name="Guest"):
+    print(f"Hello, {name}!")
+
+greet_person()
+greet_person("Bob")
+
+def add(a, b):
+    return a + b
+
+result = add(5, 3)
+print("Sum:", result)
+
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+number = 5
+print(f"Factorial of {number} is {factorial(number)}")
+
+def fibonacci(n):
+    if n <= 0:
+        return []
+    elif n == 1:
+        return [0]
+    elif n == 2:
+        return [0, 1]
+    else:
+        fibs = fibonacci(n - 1)
+        fibs.append(fibs[-1] + fibs[-2])
+        return fibs
+
+iterations = 10
+print(f"Fibonacci series up to {iterations} iterations: {fibonacci(iterations)}")

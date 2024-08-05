@@ -1,0 +1,71 @@
+# Q.1 Write a program for arithmetic operators
+a = 10
+b = 5
+
+print("Arithmetic Operators:")
+print(f"Addition: {a} + {b} = {a + b}")
+print(f"Subtraction: {a} - {b} = {a - b}")
+print(f"Multiplication: {a} * {b} = {a * b}")
+print(f"Division: {a} / {b} = {a / b}")
+print(f"Modulus: {a} % {b} = {a % b}")
+print(f"Exponentiation: {a} ** {b} = {a ** b}")
+print(f"Floor Division: {a} // {b} = {a // b}")
+print()
+
+# Q.2 Write a program for assignment operators
+c = 10
+print("Assignment Operators:")
+print(f"Initial value of c: {c}")
+
+c += 5
+print(f"c += 5: {c}")
+
+c -= 3
+print(f"c -= 3: {c}")
+
+c *= 2
+print(f"c *= 2: {c}")
+
+c /= 4
+print(f"c /= 4: {c}")
+
+c %= 3
+print(f"c %= 3: {c}")
+
+c **= 2
+print(f"c **= 2: {c}")
+
+c //= 3
+print(f"c //= 3: {c}")
+print()
+
+# Q.3 Write a program for bitwise operators
+x = 6  # 110 in binary
+y = 3  # 011 in binary
+
+print("Bitwise Operators:")
+print(f"x: {x} (binary: {bin(x)})")
+print(f"y: {y} (binary: {bin(y)})")
+
+print(f"x & y: {x & y} (binary: {bin(x & y)})")  # AND
+print(f"x | y: {x | y} (binary: {bin(x | y)})")  # OR
+print(f"x ^ y: {x ^ y} (binary: {bin(x ^ y)})")  # XOR
+print(f"~x: {~x} (binary: {bin(~x)})")  # NOT
+print(f"x << 2: {x << 2} (binary: {bin(x << 2)})")  # Left shift
+print(f"x >> 2: {x >> 2} (binary: {bin(x >> 2)})")  # Right shift
+print()
+
+# Q.4 Write a program to calculate greatest of three numbers
+num1 = 10
+num2 = 20
+num3 = 15
+
+print("Greatest of Three Numbers:")
+if num1 >= num2 and num1 >= num3:
+    greatest = num1
+elif num2 >= num1 and num2 >= num3:
+    greatest = num2
+else:
+    greatest = num3
+
+print(f"The greatest number among {num1}, {num2}, and {num3} is {greatest}")
